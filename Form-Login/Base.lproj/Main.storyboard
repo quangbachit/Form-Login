@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,83 +19,117 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullhd" translatesAutoresizingMaskIntoConstraints="NO" id="5pU-yb-BLf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6k3-e0-jEc">
-                                <rect key="frame" x="69" y="169" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6k3-e0-jEc">
+                                <rect key="frame" x="74" y="169" width="266" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uKy-eJ-NZE"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pass" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qV-sR-Z6T">
-                                <rect key="frame" x="69" y="207" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pass" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qV-sR-Z6T">
+                                <rect key="frame" x="74" y="207" width="266" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9We-H6-f0B"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-Ae-cwO">
-                                <rect key="frame" x="205" y="245" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Đăng nhập">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3L-xz-J2J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKF-in-KFV">
-                                <rect key="frame" x="69" y="283" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sửa ">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="edit" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLv-tE-PnO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-jq-FaY">
-                                <rect key="frame" x="69" y="245" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="đăng kí">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="register" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyu-3x-LSt"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Đăng nhập" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-wA-D9Y">
-                                <rect key="frame" x="104" y="127" width="167" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DcO-fd-grO">
+                                <rect key="frame" x="74" y="245" width="266" height="68"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-OD-HRs">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-jq-FaY">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666666" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="đăng kí">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="register" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyu-3x-LSt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-Ae-cwO">
+                                                <rect key="frame" x="138.66666666666663" y="0.0" width="127.33333333333337" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Đăng nhập">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3L-xz-J2J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="4Et-kK-P0s">
+                                        <rect key="frame" x="0.0" y="38" width="266" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKF-in-KFV">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666666" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Sửa ">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="edit" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLv-tE-PnO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-td-5mM">
+                                                <rect key="frame" x="138.66666666666663" y="0.0" width="127.33333333333337" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Xoá">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="remove" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMd-dH-xdv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Et-kK-P0s" firstAttribute="leading" secondItem="DcO-fd-grO" secondAttribute="leading" id="JH8-VX-duN"/>
+                                    <constraint firstItem="pdk-OD-HRs" firstAttribute="leading" secondItem="DcO-fd-grO" secondAttribute="leading" id="Mgb-hd-1dO"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Et-kK-P0s" secondAttribute="trailing" id="TOr-1U-Rfr"/>
+                                    <constraint firstAttribute="trailing" secondItem="pdk-OD-HRs" secondAttribute="trailing" id="Zf7-jN-rkg"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-wA-D9Y">
+                                <rect key="frame" x="165.33333333333334" y="127" width="83.333333333333314" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OCv-fO-k1t"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.98852461939356295" blue="0.95926481582462642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-td-5mM">
-                                <rect key="frame" x="205" y="283" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.51775274810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Xoá">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="remove" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMd-dH-xdv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DcO-fd-grO" secondAttribute="trailing" constant="54" id="A1b-LO-ORF"/>
+                            <constraint firstItem="1qV-sR-Z6T" firstAttribute="top" secondItem="6k3-e0-jEc" secondAttribute="bottom" constant="8" id="JG7-Bp-lWD"/>
+                            <constraint firstItem="6k3-e0-jEc" firstAttribute="top" secondItem="Gmw-wA-D9Y" secondAttribute="bottom" constant="21" id="Y2x-7N-Gk5"/>
                             <constraint firstItem="5pU-yb-BLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ch3-xh-sXd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6k3-e0-jEc" secondAttribute="trailing" constant="54" id="d74-l1-JCU"/>
+                            <constraint firstItem="Gmw-wA-D9Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fYI-Cj-Gm5"/>
+                            <constraint firstItem="6k3-e0-jEc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="geW-RW-6Bg"/>
                             <constraint firstAttribute="trailing" secondItem="5pU-yb-BLf" secondAttribute="trailing" id="ndI-i5-jST"/>
+                            <constraint firstItem="1qV-sR-Z6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="pBr-xE-0JX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5pU-yb-BLf" secondAttribute="bottom" id="pKD-qX-TFN"/>
+                            <constraint firstItem="Gmw-wA-D9Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="107" id="sKZ-VA-u9b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1qV-sR-Z6T" secondAttribute="trailing" constant="54" id="u0b-a4-qtH"/>
+                            <constraint firstItem="DcO-fd-grO" firstAttribute="top" secondItem="1qV-sR-Z6T" secondAttribute="bottom" constant="8" id="v1Q-M6-Qpd"/>
+                            <constraint firstItem="DcO-fd-grO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="w4w-hB-BuQ"/>
                             <constraint firstItem="5pU-yb-BLf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y55-nA-YRO"/>
                         </constraints>
                     </view>
